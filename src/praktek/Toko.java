@@ -3,32 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package praktek;
+package Tugas3;
 
 /**
  *
  * @author User
  */
 public class Toko {
-    public int id_barang;
     public String nama_barang;
-    public int harga_barang;
-    public String merek;
+    public String id_barang;
+    public String harga_barang;
+    public String merk_barang;
     
-  public Toko(int id_brg, String nama_brg, int hrg_brg ,String merk_brg)
+    public Toko(String id_brg, String nama_brg, String hrg_brg ,String merk_brg)
     {   
         this.id_barang = id_brg;
         this.nama_barang = nama_brg;
         this.harga_barang = hrg_brg;
-        this.merek = merk_brg;
+        this.merk_barang = merk_brg;
     
     }
-  public void Cetak()
-  {
-      System.out.println(" ID Barang : "+this.id_barang);
-      System.out.println(" Nama Barang : "+this.nama_barang);
-      System.out.println(" Harga Barang : "+this.harga_barang);
-      System.out.println(" Merk Barang : "+this.merek);
-  
-  }
+    public void tampil()
+    {
+        System.out.println(" Nama Barang : "+this.nama_barang);
+        System.out.println(" Id          : " +this.id_barang);
+        System.out.println(" Harga       : " + this.harga_barang);
+        System.out.println(" No Telepon  : " + this.merk_barang);
+    }
 }
